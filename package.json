@@ -6,6 +6,7 @@
   "scripts": {
     "test": "jest",
     "test:silent": "jest --watchAll --silent --noStackTrace",
+    "test:coverage": "jest --coverage --silent --noStackTrace",
     "dev": "ts-node --files src/srp/main.ts",
     "build": "tsc",
     "start": "node dist/src/srp/main.js"
