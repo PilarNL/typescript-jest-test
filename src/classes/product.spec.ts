@@ -10,7 +10,7 @@ describe('Product', () => {
   });
 
   it('should test name and price type', () => {
-    //Ssystem under test
+    //System under test
     const sut = createSut('Product 1', 10.99);
     expect(sut).toHaveProperty('name', 'Product 1');
     expect(sut.price).toBeCloseTo(10.99);

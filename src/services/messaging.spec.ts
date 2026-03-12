@@ -10,13 +10,13 @@ describe('Messaging', () => {
   });
 
   it('should return undefined', () => {
-    //Ssystem under test
+    //System under test
     const sut = createSut();
     expect(sut.sendMessage('Test message')).toBeUndefined();
   });
 
   it('should call console.log with the correct message', () => {
-    //Ssystem under test
+    //System under test
     const sut = createSut();
     const consoleSpy = jest.spyOn(console, 'log');
     sut.sendMessage('Test message');
@@ -27,7 +27,7 @@ describe('Messaging', () => {
   });
 
   it('should call console.log once', () => {
-    //Ssystem under test
+    //System under test
     const sut = createSut();
     const consoleSpy = jest.spyOn(console, 'log');
     sut.sendMessage('Test message');
